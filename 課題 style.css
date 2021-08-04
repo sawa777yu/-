@@ -1,33 +1,33 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-header{
+header {
   height: 50px;
   background-color: #ff9a4b;
 }
 
-main{
+main {
   margin: 50px auto;
   width: 960px;
   display: flex;
   justify-content: center;
 }
 
-.box{
+.box {
   width: 300px;
   background-color: #eee;
   position: relative;
   padding: 10px;
 }
 
-.box:nth-child(2){
+.box:nth-child(2) {
   margin: 0 30px;
 }
 
-.step{
+.step {
   padding: 3px;
   color: white;
   background-color: #ff9a4b;
@@ -44,38 +44,53 @@ main{
   これも理由はよくわからない*/
 }
 
-.image1{
+.image1 {
   width: auto;
   /*width autoは記述しなくていい*/
-  height:150px;
+  height: 150px;
   background-image: url(img/flow01.png);
   background-size: cover;
   background-position: bottom;
 }
 
-.image2{
+.image2 {
   width: auto;
-  height:150px;
+  height: 150px;
   background-image: url(img/flow02.png);
   background-size: cover;
   background-position: bottom;
 }
 
-.image3{
+.image3 {
   width: auto;
-  height:150px;
+  height: 150px;
   background-image: url(img/flow03.png);
   background-size: cover;
   background-position: bottom;
 }
 
-.title{
+.title {
   margin-top: 15px;
   margin-bottom: 5px;
 }
 
-
-footer{
+footer {
   height: 50px;
   background-color: #aaa;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    display: block;
+    width: 100%;
+  }
+
+  .box {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .box:nth-child(2) {
+    margin: 20px auto;
+  }
 }
